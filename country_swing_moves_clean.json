@@ -1,0 +1,650 @@
+{
+  "schema_version": "1.0",
+  "title": "Country Swing Combo Generator \u2014 Clean Move Database",
+  "source": "Consolidated from the user's COUNTRY SWING \u2014 MASTER MOVE REFERENCE.",
+  "rules": {
+    "canonical_moves_only": true,
+    "unconfirmed_transitions_are_not_generated": true,
+    "superseded_transitions": [
+      "Hammerlock -> Sliding Door"
+    ],
+    "aliases_resolve_to_canonical_move": true
+  },
+  "moves": [
+    {
+      "id": "open",
+      "name": "Open",
+      "aliases": [],
+      "category": "position",
+      "family": "open",
+      "tags": [
+        "transition"
+      ],
+      "leads_to": [
+        "cuddle",
+        "bow_and_arrow",
+        "hammerlock",
+        "pretzel",
+        "moon_flip",
+        "tornado",
+        "toss_away_spin",
+        "shin_splint",
+        "shoulder_catch"
+      ]
+    },
+    {
+      "id": "cuddle",
+      "name": "Cuddle",
+      "aliases": [],
+      "category": "position",
+      "family": "opposite-hand",
+      "tags": [
+        "transition"
+      ],
+      "leads_to": [
+        "yo_yo",
+        "front_spin",
+        "side_lean",
+        "unwrap",
+        "cuddle_dip",
+        "fall_through_dip",
+        "trust_fall",
+        "neck_turn",
+        "cradle",
+        "open"
+      ]
+    },
+    {
+      "id": "yo_yo",
+      "name": "Yo-Yo",
+      "aliases": [],
+      "category": "move",
+      "family": "opposite-hand",
+      "tags": [
+        "rotational"
+      ],
+      "leads_to": [
+        "yo_yo",
+        "cuddle"
+      ]
+    },
+    {
+      "id": "front_spin",
+      "name": "Front Spin",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "spin"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "side_lean",
+      "name": "Side Lean",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "dip",
+        "lean"
+      ],
+      "leads_to": [
+        "open",
+        "cuddle"
+      ]
+    },
+    {
+      "id": "unwrap",
+      "name": "Unwrap",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "transition",
+        "rotational"
+      ],
+      "leads_to": [
+        "double_hand_spin"
+      ]
+    },
+    {
+      "id": "double_hand_spin",
+      "name": "Double-Hand Spin",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "spin",
+        "rotational"
+      ],
+      "leads_to": [
+        "linked_arm_flip"
+      ]
+    },
+    {
+      "id": "linked_arm_flip",
+      "name": "Linked Arm Flip",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "flip",
+        "aerial"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "cuddle_dip",
+      "name": "Cuddle Dip",
+      "aliases": [
+        "Cradle Side Dip"
+      ],
+      "category": "move",
+      "family": "opposite-hand",
+      "tags": [
+        "dip"
+      ],
+      "leads_to": [
+        "open",
+        "bow_and_arrow",
+        "grave_digger",
+        "arm_breaker"
+      ]
+    },
+    {
+      "id": "fall_through",
+      "name": "Fall Through",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "transition"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "fall_through_dip",
+      "name": "Fall Through Dip",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "dip"
+      ],
+      "leads_to": [
+        "spin_out"
+      ]
+    },
+    {
+      "id": "trust_fall",
+      "name": "Trust Fall",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "dip",
+        "fall"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "neck_turn",
+      "name": "Neck Turn",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [],
+      "leads_to": [
+        "neck_drop"
+      ]
+    },
+    {
+      "id": "neck_drop",
+      "name": "Neck Drop",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "dip",
+        "drop"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "cradle",
+      "name": "Cradle",
+      "aliases": [
+        "Cuddle-to-Open Cradle"
+      ],
+      "category": "move",
+      "family": "transition",
+      "tags": [
+        "transition"
+      ],
+      "leads_to": [
+        "open",
+        "cuddle"
+      ]
+    },
+    {
+      "id": "bow_and_arrow",
+      "name": "Bow & Arrow",
+      "aliases": [
+        "Bow and Arrow"
+      ],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [],
+      "leads_to": [
+        "peekaboo",
+        "reverse_peekaboo",
+        "floor_spin",
+        "shadow_dip",
+        "grave_digger",
+        "arm_breaker",
+        "open"
+      ]
+    },
+    {
+      "id": "peekaboo",
+      "name": "Peekaboo",
+      "aliases": [],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [],
+      "leads_to": [
+        "reverse_peekaboo",
+        "bow_and_arrow"
+      ]
+    },
+    {
+      "id": "reverse_peekaboo",
+      "name": "Reverse Peekaboo",
+      "aliases": [],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [],
+      "leads_to": [
+        "bow_and_arrow"
+      ]
+    },
+    {
+      "id": "floor_spin",
+      "name": "Floor Spin",
+      "aliases": [],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [
+        "floor",
+        "rotational"
+      ],
+      "leads_to": [
+        "bow_and_arrow"
+      ]
+    },
+    {
+      "id": "shadow_dip",
+      "name": "Shadow Dip",
+      "aliases": [],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [
+        "dip"
+      ],
+      "leads_to": [
+        "grave_digger",
+        "arm_breaker"
+      ]
+    },
+    {
+      "id": "grave_digger",
+      "name": "Grave Digger",
+      "aliases": [],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [
+        "dip"
+      ],
+      "leads_to": [
+        "music_box"
+      ]
+    },
+    {
+      "id": "music_box",
+      "name": "Music Box",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "dip",
+        "lean"
+      ],
+      "leads_to": [
+        "titanic"
+      ]
+    },
+    {
+      "id": "titanic",
+      "name": "Titanic",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "dip",
+        "lean"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "arm_breaker",
+      "name": "Arm Breaker",
+      "aliases": [],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "pretzel",
+      "name": "Pretzel",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "transition"
+      ],
+      "leads_to": [
+        "cuddle",
+        "hammerlock"
+      ]
+    },
+    {
+      "id": "moon_flip",
+      "name": "Moon Flip",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "flip",
+        "aerial"
+      ],
+      "leads_to": [
+        "momentum"
+      ]
+    },
+    {
+      "id": "momentum",
+      "name": "Momentum",
+      "aliases": [],
+      "category": "transition",
+      "family": "unknown",
+      "tags": [
+        "transition"
+      ],
+      "leads_to": [
+        "halfway_around_the_world"
+      ]
+    },
+    {
+      "id": "halfway_around_the_world",
+      "name": "Halfway Around the World",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "carry",
+        "rotational"
+      ],
+      "leads_to": [
+        "princess_carry",
+        "cuddle",
+        "open"
+      ]
+    },
+    {
+      "id": "princess_carry",
+      "name": "Princess Carry",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "carry",
+        "lift"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "tornado",
+      "name": "Tornado",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "rotational"
+      ],
+      "leads_to": [
+        "cuddle",
+        "open"
+      ]
+    },
+    {
+      "id": "toss_away_spin",
+      "name": "Toss Away Spin",
+      "aliases": [
+        "Toss Away"
+      ],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "spin",
+        "rotational"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "toss",
+      "name": "Toss",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "toss"
+      ],
+      "leads_to": [
+        "spin_out",
+        "open"
+      ]
+    },
+    {
+      "id": "spin_out",
+      "name": "Spin Out",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "spin",
+        "transition"
+      ],
+      "leads_to": [
+        "open",
+        "cuddle"
+      ]
+    },
+    {
+      "id": "shin_splint",
+      "name": "Shin Splint",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "lift",
+        "jump"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "hammerlock",
+      "name": "Hammerlock",
+      "aliases": [],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [
+        "transition"
+      ],
+      "leads_to": [
+        "music_box",
+        "elbow_lock_flip",
+        "tabletop",
+        "open"
+      ]
+    },
+    {
+      "id": "sliding_door",
+      "name": "Sliding Door",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [],
+      "leads_to": []
+    },
+    {
+      "id": "elbow_lock_flip",
+      "name": "Elbow Lock Flip",
+      "aliases": [],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [
+        "flip",
+        "aerial"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "tabletop",
+      "name": "Tabletop",
+      "aliases": [
+        "Table Top"
+      ],
+      "category": "move",
+      "family": "same-hand",
+      "tags": [
+        "add-on"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "shoulder_catch",
+      "name": "Shoulder Catch",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "catch"
+      ],
+      "leads_to": [
+        "open"
+      ]
+    },
+    {
+      "id": "belt_loop",
+      "name": "Belt Loop",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [],
+      "leads_to": []
+    },
+    {
+      "id": "belt_buckle",
+      "name": "Belt Buckle",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [],
+      "leads_to": [
+        "open",
+        "cuddle"
+      ],
+      "status": "tentative"
+    },
+    {
+      "id": "dishrag",
+      "name": "Dishrag",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [],
+      "leads_to": []
+    },
+    {
+      "id": "jack_knife",
+      "name": "Jack Knife",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "dip",
+        "floor"
+      ],
+      "leads_to": []
+    },
+    {
+      "id": "sidecar",
+      "name": "Sidecar",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "dip",
+        "lean"
+      ],
+      "leads_to": []
+    },
+    {
+      "id": "basket_flip",
+      "name": "Basket Flip",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [
+        "flip",
+        "aerial"
+      ],
+      "leads_to": []
+    },
+    {
+      "id": "can_opener",
+      "name": "Can Opener",
+      "aliases": [],
+      "category": "move",
+      "family": "unknown",
+      "tags": [],
+      "leads_to": []
+    }
+  ]
+}

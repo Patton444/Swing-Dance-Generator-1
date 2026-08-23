@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Swing Combo Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Country Swing Combo Generator</h1>
+    <p class="subtitle">Generates combos using only established transitions.</p>
+
+    <section class="controls">
+      <label>Combo length
+        <select id="length">
+          <option value="4">4 moves</option><option value="6">6 moves</option>
+          <option value="8" selected>8 moves</option><option value="10">10 moves</option>
+          <option value="12">12 moves</option><option value="15">15 moves</option>
+          <option value="20">20 moves</option>
+        </select>
+      </label>
+      <label>Dips
+        <select id="dips"><option value="yes" selected>Allow</option><option value="no">Exclude</option></select>
+      </label>
+      <label>Flips
+        <select id="flips"><option value="yes" selected>Allow</option><option value="no">Exclude</option></select>
+      </label>
+      <label>Lifts / Carries
+        <select id="lifts"><option value="yes" selected>Allow</option><option value="no">Exclude</option></select>
+      </label>
+    </section>
+
+    <button id="generate">Generate Combo</button>
+    <section id="result" class="result" aria-live="polite"><p>Loading move database...</p></section>
+    <p class="note">Start: Open. The generator uses canonical moves and established transitions only.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
